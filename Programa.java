@@ -26,6 +26,20 @@ import java.util.Scanner;
 		teclado.close();
 		System.out.println("Fin del programa. Espero volver a verle pronto.");
 	}
+
+	public static void verInforme(){
+		Float suma = 0f;
+		System.out.println("\nINFORME DE ENVIOS");
+		for (int i = 0; i < iEnvios; i++) {
+				Envio envioActual = envios[i];
+				System.out.println("\t" + (i + 1) + " . " + envios[i].verComoString());
+
+				suma += envios[i].precio;
+		}
+		
+		System.out.println("\t------------------");
+		System.out.println("\tTOTAL:\t\t" + suma + "€\n");
+	}
 	
 	
 	public static String verMenu(){
@@ -34,7 +48,6 @@ import java.util.Scanner;
 			System.out.println("\t2. Ver Informe de Envio");
 			System.out.println("\tX. Salir");
 			System.out.print("Opcion: ");
-			String opcion = teclado.nextLine();
 			return teclado.nextLine();
 	}
 	
@@ -44,12 +57,13 @@ import java.util.Scanner;
 						System.out.println("Registro de Envio");
 						System.out.println("\tNúmero: ");
 						String numero = teclado.nextLine();
+						if (numero.equals(" "))
+							break;
+						
 						System.out.println("\tPrecio: ");
 						Float precio = Float.valueOf(teclado.nextLine());
 						
-						Envio envio = new Envio();
-						envio.numero = numero;
-						envio.precio = precio;
+						Envio envio = new Envio(numero, precio);
 						envios[iEnvios++] = envio;
 						System.out.println("Registro OK");
 					}
