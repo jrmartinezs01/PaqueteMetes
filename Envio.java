@@ -5,13 +5,12 @@ public class Envio{
 	// Sirve para inicializar los atributos del objeto.
 	// This el objeto que ejecuta el codigo
 	public Envio(String numero, Float precio){
-			this.numero = numero;
 			this.precio = precio;
 			System.out.println("Construyendo objeto Envio...");
 
 	}
 
-	public String verComoString(){
+	public String verEstado(){
 		String envio = this.numero + "\t\t " + this.precio + "€";
 		return envio; 
 
