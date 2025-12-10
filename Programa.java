@@ -1,7 +1,14 @@
+<<<<<<< HEAD
 //Cambio Prueba
 /**
  * Programa.java
  * author: Robe Extremoduro 
+=======
+//Cambio Prueba 
+/**
+ * Programa.java
+ * author: author; Juan Ra
+>>>>>>> 773335066e50d8e517567edb08fdaa43f77ed934
  */
 import java.util.Scanner;
 	public class Programa{
