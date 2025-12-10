@@ -20,6 +20,8 @@ import java.util.Scanner;
 						break;
 				case "2":
 						break;
+				case "3":
+					enviar();
 				case "X":
 				case "x":
 						break;
@@ -51,6 +53,7 @@ import java.util.Scanner;
 		System.out.println("APLICACION DE PaqueteMetes");
 			System.out.println("\t1. Registrar Envio");
 			System.out.println("\t2. Ver Informe de Envio");
+			System.out.println("\t3. Realizar Envio");
 			System.out.println("\tX. Salir");
 			System.out.print("Opcion: ");
 			return teclado.nextLine();
@@ -77,7 +80,10 @@ import java.util.Scanner;
 					}
 				}
 	}
-	
+
+	public static void enviar(){
+		
+	}
 	
 }
 	
