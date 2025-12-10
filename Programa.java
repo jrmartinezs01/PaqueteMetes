@@ -1,4 +1,8 @@
 //Cambio Prueba
+/**
+ * Programa.java
+ * author: Robe Extremoduro 
+ */
 import java.util.Scanner;
 	public class Programa{
 		static Scanner teclado = new Scanner(System.in);
